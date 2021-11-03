@@ -38,6 +38,9 @@ function main(e) {
     }
     if (type == "clear") {
         display.textContent = "0"
+        calculator.dataset.firstNumber = undefined
+        secondNumber = undefined
+        operator = undefined
         dot.dataset.haveDot = "false"
     }
     if (type == "delete") {
